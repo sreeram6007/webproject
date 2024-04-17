@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>Login</header>
+        <form action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Username">
+                    <i class="icon fas fa-user"></i>
+                </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            <div class="field captcha">
+                <div class="captcha-display" id="captcha-display"></div>
+                <button type="button" id="refresh-captcha" class="refresh-captcha-btn">Refresh Captcha</button>
+                <div class="input-area">
+                    <input type="text" placeholder="Enter Captcha" id="captcha-input">
+                    <i class="icon fas fa-shield-alt"></i>
+                </div>
+            </div>
+            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <input type="submit" value="Login">
+        </form>
+        <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
